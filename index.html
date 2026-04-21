@@ -1,0 +1,445 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <meta name="description" content="Marina · Acompañamiento terapéutico online para recuperar equilibrio, claridad y conexión interior. Sesiones por teléfono o videollamada." />
+  <meta name="author" content="Juan Ramón · IA automation" />
+  <meta name="theme-color" content="#FAF7F2" />
+  <title>Marina · Acompañamiento Terapéutico Online</title>
+
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Cormorant+Garamond:ital,wght@0,400;0,500;0,600;1,400;1,500&family=Inter:wght@300;400;500;600&display=swap">
+
+  <link rel="stylesheet" href="assets/css/tokens.css" />
+  <link rel="stylesheet" href="assets/css/base.css" />
+  <link rel="stylesheet" href="assets/css/components.css" />
+  <link rel="stylesheet" href="assets/css/pages.css" />
+
+  <link rel="preload" as="image" href="assets/img/hero.webp" type="image/webp">
+</head>
+<body>
+
+  <header class="site-header">
+    <div class="wrap">
+      <div class="nav">
+        <a href="index.html" class="nav-logo" aria-label="Marina · Acompañamiento Terapéutico – Inicio">
+          <picture>
+            <source srcset="assets/img/logo.webp" type="image/webp">
+            <img src="assets/img/logo.png" alt="" width="48" height="48" />
+          </picture>
+          <span class="nav-logo-text">
+            <span class="main">Marina</span>
+            <span class="sub">Acompañamiento Terapéutico</span>
+          </span>
+        </a>
+
+        <nav aria-label="Principal">
+          <ul class="nav-links">
+            <li><a href="index.html" class="is-active">Inicio</a></li>
+            <li><a href="#sobre-marina">Sobre Marina</a></li>
+            <li><a href="servicios.html">Servicios</a></li>
+            <li><a href="#testimonios">Testimonios</a></li>
+            <li><a href="contacto.html">Contacto</a></li>
+          </ul>
+        </nav>
+
+        <a href="#" class="btn btn-primary btn-sm nav-cta" data-open-chat>Reservar sesión</a>
+
+        <button class="hamburger" id="hamburger" aria-label="Abrir menú" aria-expanded="false" aria-controls="mobile-menu">
+          <span></span><span></span><span></span>
+        </button>
+      </div>
+    </div>
+    <div class="mobile-menu" id="mobile-menu">
+      <div class="wrap">
+        <nav aria-label="Móvil">
+          <a href="index.html">Inicio</a>
+          <a href="#sobre-marina">Sobre Marina</a>
+          <a href="servicios.html">Servicios</a>
+          <a href="#testimonios">Testimonios</a>
+          <a href="contacto.html">Contacto</a>
+          <a href="#" class="btn btn-primary" data-open-chat>Reservar sesión</a>
+        </nav>
+      </div>
+    </div>
+  </header>
+
+  <main>
+
+    <!-- ========== HERO ========== -->
+    <section class="hero" id="inicio">
+      <svg class="hero-sigil tl" viewBox="0 0 100 100" fill="none" stroke="currentColor" stroke-width="0.4" aria-hidden="true">
+        <circle cx="50" cy="50" r="45"/>
+        <circle cx="50" cy="27.5" r="22.5"/><circle cx="50" cy="72.5" r="22.5"/>
+        <circle cx="30.5" cy="38.75" r="22.5"/><circle cx="69.5" cy="38.75" r="22.5"/>
+        <circle cx="30.5" cy="61.25" r="22.5"/><circle cx="69.5" cy="61.25" r="22.5"/>
+      </svg>
+      <svg class="hero-sigil br" viewBox="0 0 100 100" fill="none" stroke="currentColor" stroke-width="0.4" aria-hidden="true">
+        <circle cx="50" cy="50" r="45"/>
+        <polygon points="50,5 93.3,27.5 93.3,72.5 50,95 6.7,72.5 6.7,27.5"/>
+        <circle cx="50" cy="50" r="25"/>
+      </svg>
+
+      <div class="wrap">
+        <div class="hero-grid">
+          <div class="hero-text reveal">
+            <div class="hero-label">
+              <span class="num">No. 01</span>
+              <span>Acompañamiento Terapéutico Online</span>
+            </div>
+
+            <h1 class="hero-title">
+              Un espacio de acompañamiento terapéutico para recuperar
+              <em>equilibrio, claridad y conexión interior</em>
+            </h1>
+
+            <p class="hero-subtitle">Acompaño procesos personales desde una mirada cercana, cálida y profunda, a través de sesiones online adaptadas a tu momento y a tus necesidades.</p>
+
+            <div class="hero-ctas">
+              <a href="#" class="btn btn-primary btn-lg" data-open-chat>Reservar sesión</a>
+              <a href="#" class="btn btn-secondary btn-lg" data-open-chat>Hablar con el asistente</a>
+            </div>
+
+            <div class="hero-trust">
+              <span>Sesiones por teléfono o videollamada</span>
+              <span>Atención personalizada</span>
+              <span>Espacio confidencial y humano</span>
+            </div>
+          </div>
+
+          <div class="hero-image reveal">
+            <div class="hero-image-frame" aria-hidden="true"></div>
+            <picture>
+              <source srcset="assets/img/hero.webp" type="image/webp">
+              <img src="assets/img/hero.jpg" alt="Marina – Acompañamiento terapéutico" loading="eager" width="500" height="625" />
+            </picture>
+            <span class="hero-image-caption">— Marina —</span>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- ========== REFLEXIÓN ========== -->
+    <section class="section reflection">
+      <div class="wrap">
+        <div class="reflection-inner reveal">
+          <div class="reflection-star" aria-hidden="true">
+            <span class="line"></span>
+            <svg viewBox="0 0 24 24"><path d="M12 2l2.4 7.4H22l-6.2 4.5 2.4 7.4L12 17l-6.2 4.3 2.4-7.4L2 9.4h7.6z"/></svg>
+            <span class="line"></span>
+          </div>
+
+          <h2 class="reflection-title">A veces lo que necesitas no es ir más rápido, sino <span>comprender mejor lo que estás viviendo</span></h2>
+
+          <div class="divider-gold is-centered"></div>
+
+          <div class="reflection-body">
+            <p>Hay momentos en los que sentimos bloqueo, confusión, cansancio emocional o la sensación de estar repitiendo patrones que no entendemos del todo.</p>
+            <p>En esos momentos, disponer de un espacio seguro, respetuoso y consciente puede ayudarte a ordenar lo que sientes, escuchar lo que necesitas y avanzar con más claridad.</p>
+            <p>Mi acompañamiento está orientado a ofrecerte ese espacio: un lugar de presencia, escucha y comprensión profunda para ayudarte a encontrar más equilibrio en tu proceso.</p>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- ========== SERVICIOS ========== -->
+    <section class="section section-ivory" id="servicios">
+      <div class="wrap">
+        <div class="section-head reveal">
+          <div class="section-number">No. 02</div>
+          <h2>Cómo puedo <em class="text-italic-gold">acompañarte</em></h2>
+          <p>Las sesiones se realizan online, por teléfono o videollamada, según lo que te resulte más cómodo.</p>
+        </div>
+
+        <ol class="services-list reveal">
+          <li>
+            <span class="service-index">I.</span>
+            <span class="service-glyph" aria-hidden="true">◇</span>
+            <div class="service-body">
+              <h3 class="service-name">Acompañamiento terapéutico</h3>
+              <p class="service-desc">Sesiones personalizadas orientadas a comprender tu proceso interior, identificar bloqueos y abrir nuevos caminos de equilibrio y autoconocimiento.</p>
+              <a class="service-link" href="servicios.html#acompanamiento">Leer más</a>
+            </div>
+          </li>
+          <li>
+            <span class="service-index">II.</span>
+            <span class="service-glyph" aria-hidden="true">○</span>
+            <div class="service-body">
+              <h3 class="service-name">Equilibrio de sanación a distancia</h3>
+              <p class="service-desc">Un trabajo energético profundo realizado de forma remota para favorecer el equilibrio emocional, mental y energético. Adaptado a tu momento vital.</p>
+              <a class="service-link" href="servicios.html#sanacion">Leer más</a>
+            </div>
+          </li>
+          <li>
+            <span class="service-index">III.</span>
+            <span class="service-glyph" aria-hidden="true">△</span>
+            <div class="service-body">
+              <h3 class="service-name">Servicio Geocrom</h3>
+              <p class="service-desc">Una herramienta de trabajo terapéutico que integra geometría sagrada, color y vibración para facilitar procesos de transformación y comprensión interior.</p>
+              <a class="service-link" href="servicios.html#geocrom">Leer más</a>
+            </div>
+          </li>
+          <li>
+            <span class="service-index">IV.</span>
+            <span class="service-glyph" aria-hidden="true">☽</span>
+            <div class="service-body">
+              <h3 class="service-name">Arquetipos psicológicos a través del tarot</h3>
+              <p class="service-desc">Una lectura simbólica y arquetípica que utiliza el tarot como espejo del inconsciente para comprender mejor tus patrones, recursos y posibilidades de evolución.</p>
+              <a class="service-link" href="servicios.html#tarot">Leer más</a>
+            </div>
+          </li>
+          <li>
+            <span class="service-index">V.</span>
+            <span class="service-glyph" aria-hidden="true">∞</span>
+            <div class="service-body">
+              <h3 class="service-name">Numerología Kármica</h3>
+              <p class="service-desc">Una herramienta de autoconocimiento que permite comprender patrones, aprendizajes y desafíos personales a través del significado simbólico de los números.</p>
+              <a class="service-link" href="servicios.html#numerologia">Leer más</a>
+            </div>
+          </li>
+        </ol>
+      </div>
+    </section>
+
+    <!-- ========== SOBRE MARINA ========== -->
+    <section class="section about" id="sobre-marina">
+      <div class="wrap">
+        <div class="about-grid">
+          <div class="about-image reveal">
+            <div class="about-image-wrap">
+              <picture>
+                <source srcset="assets/img/about.webp" type="image/webp">
+                <img src="assets/img/about.jpg" alt="Marina en sesión de acompañamiento terapéutico" loading="lazy" width="480" height="600" />
+              </picture>
+            </div>
+            <span class="about-image-badge">Sobre Marina</span>
+          </div>
+
+          <div class="about-text reveal">
+            <div class="section-number">No. 03</div>
+            <h2 class="about-signature">Soy Marina</h2>
+            <div class="divider-gold"></div>
+
+            <div class="about-body">
+              <p>Mi trabajo nace desde el respeto profundo al alma humana y al proceso de sanación de cada persona.</p>
+              <p>Las terapias que ofrezco son un espacio sagrado de transformación, donde la confianza, la honestidad y la apertura del corazón son fundamentales.</p>
+              <p>Por ello, acompaño únicamente a personas que desean realmente sanar, crecer y responsabilizarse de su propio camino interior.</p>
+              <p>Este espacio no está basado en la crítica, el juicio o el chisme, sino en la conciencia, el respeto y la evolución personal.</p>
+              <p>Cada proceso terapéutico requiere compromiso, gratitud y valoración mutua. Cuando estas cualidades están presentes, la sanación se abre de forma natural y profunda.</p>
+              <p>Mi intención es cuidar la energía de este espacio para que siga siendo un lugar de luz, integridad y verdadero crecimiento espiritual.</p>
+              <p>Gracias a quienes llegan con el corazón abierto y con el deseo sincero de transformarse.</p>
+            </div>
+
+            <blockquote class="about-quote">
+              <p>“Un acompañamiento cálido, profundo y consciente para ayudarte a comprenderte mejor y avanzar con más claridad.”</p>
+            </blockquote>
+
+            <a href="#" class="btn btn-secondary btn-lg" data-open-chat>Conocer más y reservar</a>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- ========== CÓMO FUNCIONA ========== -->
+    <section class="section section-ivory">
+      <div class="wrap">
+        <div class="section-head reveal">
+          <div class="section-number">No. 04</div>
+          <span class="eyebrow is-centered"><span>El proceso</span></span>
+          <h2>Cómo <em class="text-italic-gold">funciona</em></h2>
+          <p>El primer paso siempre es el más importante. Estoy aquí para que sea sencillo.</p>
+        </div>
+
+        <div class="steps reveal">
+          <div class="step">
+            <h3>Primer contacto</h3>
+            <p>Escríbeme a través del asistente o por WhatsApp. Te respondo en el menor tiempo posible para acordar una primera llamada.</p>
+          </div>
+          <div class="step">
+            <h3>Entrevista inicial</h3>
+            <p>Una primera sesión gratuita para escuchar tu situación, resolver dudas y valorar juntos qué tipo de acompañamiento es el más adecuado.</p>
+          </div>
+          <div class="step">
+            <h3>Sesiones online</h3>
+            <p>Trabajamos juntos por teléfono o videollamada, según tu preferencia. Las sesiones son confidenciales y adaptadas a tu ritmo.</p>
+          </div>
+          <div class="step">
+            <h3>Proceso de acompañamiento</h3>
+            <p>Definimos una propuesta de proceso personalizada: frecuencia, herramientas y objetivos adaptados a lo que necesitas en este momento.</p>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- ========== PRINCIPIOS ========== -->
+    <section class="section principles-section">
+      <div class="wrap">
+        <div class="principles-grid">
+          <div class="principles-intro reveal">
+            <div class="section-number">No. 05</div>
+            <span class="eyebrow"><span>Lo que ofrece</span></span>
+            <h2>Un espacio <em class="text-italic-gold">para ti</em></h2>
+            <div class="divider-gold"></div>
+            <p>El acompañamiento terapéutico no es una solución rápida. Es un proceso de presencia, escucha y trabajo interior que te ayuda a recuperar el equilibrio desde dentro.</p>
+            <p class="italic-note">Este espacio está destinado a personas que desean caminar hacia su evolución interior con conciencia, respeto y amor por su propia alma.</p>
+          </div>
+
+          <ol class="principles reveal">
+            <li>
+              <span class="num">1.</span>
+              <div>
+                <h3>Responsabilidad personal</h3>
+                <p>La terapia es un acompañamiento, no una dependencia. Cada persona es responsable de su propio proceso de crecimiento y transformación.</p>
+              </div>
+            </li>
+            <li>
+              <span class="num">2.</span>
+              <div>
+                <h3>Respeto y confidencialidad</h3>
+                <p>Todo lo que se comparte en sesión pertenece a un espacio sagrado de confianza y respeto mutuo.</p>
+              </div>
+            </li>
+            <li>
+              <span class="num">3.</span>
+              <div>
+                <h3>Apertura al cambio</h3>
+                <p>La sanación requiere disposición para observarse, cuestionar patrones y permitir nuevas formas de comprender la vida.</p>
+              </div>
+            </li>
+            <li>
+              <span class="num">4.</span>
+              <div>
+                <h3>Gratitud y valoración del proceso</h3>
+                <p>Reconocer el valor del acompañamiento terapéutico permite que la energía del trabajo fluya con mayor profundidad.</p>
+              </div>
+            </li>
+            <li>
+              <span class="num">5.</span>
+              <div>
+                <h3>Comunicación honesta</h3>
+                <p>El diálogo sincero y respetuoso es la base para sostener un proceso terapéutico saludable.</p>
+              </div>
+            </li>
+          </ol>
+        </div>
+      </div>
+    </section>
+
+    <!-- ========== TESTIMONIOS ========== -->
+    <section class="section" id="testimonios">
+      <div class="wrap">
+        <div class="section-head reveal">
+          <div class="section-number">No. 06</div>
+          <span class="eyebrow is-centered"><span>Testimonios</span></span>
+          <h2>Lo que dicen quienes han <em class="text-italic-gold">pasado por este proceso</em></h2>
+        </div>
+
+        <div class="testimonials reveal">
+          <figure class="testimonial">
+            <blockquote>
+              <p class="testimonial-quote">Llegué a Marina en un momento de mucha confusión y cansancio. Las sesiones me ayudaron a entender qué estaba pasando realmente, no solo en la superficie. Es un acompañamiento diferente, muy cercano y a la vez muy profundo.</p>
+            </blockquote>
+            <figcaption class="testimonial-author">
+              <span class="testimonial-name">Laura M.</span>
+              <span class="testimonial-detail">Acompañamiento terapéutico</span>
+            </figcaption>
+          </figure>
+
+          <figure class="testimonial">
+            <blockquote>
+              <p class="testimonial-quote">El equilibrio de sanación a distancia me sorprendió mucho. No sabía qué esperar, pero tras las sesiones noté un cambio real en mi estado de ánimo y en mi claridad mental. Lo recomiendo sin dudar.</p>
+            </blockquote>
+            <figcaption class="testimonial-author">
+              <span class="testimonial-name">Sergio R.</span>
+              <span class="testimonial-detail">Sanación a distancia</span>
+            </figcaption>
+          </figure>
+
+          <figure class="testimonial">
+            <blockquote>
+              <p class="testimonial-quote">La interpretación de arquetipos a través del tarot fue una de las experiencias más reveladoras que he tenido. Marina tiene una mirada muy fina para leer los patrones y ayudarte a verlos desde otro lugar. Muy recomendable.</p>
+            </blockquote>
+            <figcaption class="testimonial-author">
+              <span class="testimonial-name">Ana P.</span>
+              <span class="testimonial-detail">Arquetipos y tarot</span>
+            </figcaption>
+          </figure>
+        </div>
+      </div>
+    </section>
+
+    <!-- ========== CTA FINAL ========== -->
+    <section class="cta-final" id="contacto">
+      <div class="cta-final-bg" aria-hidden="true">
+        <picture>
+          <source srcset="assets/img/cta.webp" type="image/webp">
+          <img src="assets/img/cta.jpg" alt="" />
+        </picture>
+      </div>
+      <div class="wrap">
+        <div class="cta-final-inner reveal">
+          <span class="eyebrow is-centered"><span>Da el primer paso</span></span>
+          <h2>Da el primer paso hacia tu <em class="text-italic-gold">equilibrio personal</em></h2>
+          <p>Si sientes que es un buen momento para comprender mejor tu proceso y recibir acompañamiento, puedes reservar una entrevista inicial o escribirme directamente a través del asistente.</p>
+          <div class="cta-final-actions">
+            <a href="#" class="btn btn-gold btn-lg" data-open-chat>Reservar sesión</a>
+            <a href="#" class="btn btn-ghost btn-lg" data-open-chat>Hablar con el asistente</a>
+          </div>
+          <p class="cta-final-trust">Sesiones confidenciales · Sin compromiso · Primer contacto</p>
+        </div>
+      </div>
+    </section>
+
+  </main>
+
+  <footer class="site-footer">
+    <div class="wrap">
+      <div class="footer-grid">
+        <div class="footer-brand">
+          <picture>
+            <source srcset="assets/img/logo.webp" type="image/webp">
+            <img src="assets/img/logo.png" alt="Marina · Acompañamiento Terapéutico" />
+          </picture>
+          <p>Un espacio de acompañamiento terapéutico online para recuperar equilibrio, claridad y conexión interior.</p>
+        </div>
+        <div>
+          <h3 class="footer-col-title">Servicios</h3>
+          <ul class="footer-list">
+            <li><a href="servicios.html#acompanamiento">Acompañamiento terapéutico</a></li>
+            <li><a href="servicios.html#sanacion">Equilibrio de sanación</a></li>
+            <li><a href="servicios.html#geocrom">Servicio Geocrom</a></li>
+            <li><a href="servicios.html#tarot">Arquetipos psicológicos</a></li>
+            <li><a href="servicios.html#numerologia">Numerología Kármica</a></li>
+          </ul>
+        </div>
+        <div>
+          <h3 class="footer-col-title">Contacto</h3>
+          <ul class="footer-list">
+            <li><a href="contacto.html">Hablar con Marina</a></li>
+            <li><a href="#" data-whatsapp target="_blank" rel="noopener">WhatsApp directo</a></li>
+            <li><span>Sesiones por teléfono o videollamada</span></li>
+          </ul>
+        </div>
+      </div>
+
+      <div class="footer-divider"></div>
+
+      <div class="footer-bottom">
+        <ul class="footer-legal">
+          <li><a href="aviso-legal.html">Aviso legal</a></li>
+          <li><a href="privacidad.html">Política de privacidad</a></li>
+          <li><a href="cookies.html">Política de cookies</a></li>
+        </ul>
+        <p class="footer-copy">© <span id="year">2026</span> Marina · Acompañamiento Terapéutico. Todos los derechos reservados. La marca, los contenidos, la identidad visual y los materiales de esta web están protegidos por la normativa vigente en materia de propiedad intelectual e industrial.</p>
+        <p class="footer-credit">Diseño y desarrollo: Juan Ramón · IA automation</p>
+      </div>
+    </div>
+  </footer>
+
+  <script src="config.js"></script>
+  <script src="assets/js/main.js" defer></script>
+  <script src="assets/js/chatbot.js" defer></script>
+</body>
+</html>

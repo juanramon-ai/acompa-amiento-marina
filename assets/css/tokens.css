@@ -1,0 +1,37 @@
+:root {
+  --brand-turquoise: #4AAFA7;
+  --brand-turquoise-dark: #3A8F88;
+  --brand-turquoise-light: #6ECFC8;
+  --brand-gold: #C9A84C;
+  --brand-gold-light: #DEC06B;
+  --brand-ivory: #FAF7F2;
+  --brand-cream: #F5F0E8;
+  --brand-cream-dark: #EDE6D8;
+  --brand-dark: #2D2D2D;
+  --brand-muted: #6B6B6B;
+  --brand-light: #9A9A9A;
+
+  --font-serif: 'Cormorant Garamond', 'EB Garamond', Georgia, 'Times New Roman', serif;
+  --font-sans: 'Inter', -apple-system, BlinkMacSystemFont, 'Segoe UI', system-ui, sans-serif;
+  --font-mono: 'Courier New', monospace;
+
+  --display-3xl: clamp(3rem, 8vw, 6.5rem);
+  --display-2xl: clamp(2.5rem, 6vw, 5rem);
+  --display-xl: clamp(2.25rem, 5vw, 4rem);
+  --display-lg: clamp(1.875rem, 4vw, 3rem);
+  --display-md: clamp(1.5rem, 3vw, 2.25rem);
+
+  --shadow-card: 0 4px 24px rgba(45,45,45,0.06);
+  --shadow-card-hover: 0 16px 48px rgba(45,45,45,0.14);
+  --shadow-gold: 0 6px 24px rgba(201,168,76,0.28);
+  --shadow-chat: 0 20px 60px rgba(45,45,45,0.22);
+
+  --max-wide: 1240px;
+  --max-narrow: 760px;
+  --radius-sm: 4px;
+  --radius-md: 12px;
+  --radius-lg: 24px;
+
+  --ease-out: cubic-bezier(0.22, 1, 0.36, 1);
+  --ease-in-out: cubic-bezier(0.65, 0, 0.35, 1);
+}
