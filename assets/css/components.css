@@ -312,7 +312,7 @@
 }
 @media (min-width: 768px) { .footer-grid { grid-template-columns: 1.6fr 1fr 1fr; gap: 4rem; } }
 
-.footer-brand img { height: 64px; width: auto; margin-bottom: 1.5rem; filter: brightness(1.8); }
+.footer-brand img { height: 72px; width: auto; margin-bottom: 1.5rem; }
 .footer-brand p { font-size: 0.925rem; line-height: 1.7; max-width: 36ch; }
 
 .footer-col-title {
