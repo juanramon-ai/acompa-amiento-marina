@@ -1,0 +1,11 @@
+.git
+.gitignore
+.vercel
+.vscode
+.idea
+.DS_Store
+node_modules
+public
+preview-terapias.html
+*.md
+README*
