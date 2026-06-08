@@ -14,7 +14,7 @@ window.MARINA_CONFIG = {
 
   // Pendiente: URL del webhook de n8n. Mientras esté vacío, el chatbot
   // responderá con un mock local para poder probar el flujo.
-  N8N_WEBHOOK_URL: "",
+  N8N_WEBHOOK_URL: "https://jr-proyect-n8n.uudua6.easypanel.host/webhook/marina-chat",
 
   CHAT_GREETING: "Hola, soy el asistente de Marina. ¿En qué puedo ayudarte hoy? Puedo orientarte sobre los servicios o ayudarte a reservar una sesión.",
   CHAT_ERROR_FALLBACK: "Ahora mismo no puedo responderte por aquí. Puedes escribirle directamente a Marina por WhatsApp."
